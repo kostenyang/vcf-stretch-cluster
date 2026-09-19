@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+stretch-spec.json
+stretch-task.txt
+hosts.json
+compaction.json
