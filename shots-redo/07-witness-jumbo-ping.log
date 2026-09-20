@@ -1,0 +1,9 @@
+
+Interface
+   VmkNic Name: vmk1
+   Interface UUID: f6b2ad22-4b6b-ca3e-758d-5924e8023947
+   Traffic Type: vsan
+140.5 8972: 2 packets received
+140.6 8972: 2 packets received
+140.7 8972: 2 packets received
+

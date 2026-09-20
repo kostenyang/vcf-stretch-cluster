@@ -1,0 +1,22 @@
+b1fbf71d-bcce-4b69-8dfd-ab9a020835e9  vcf-m01-cl01     stretched=True hosts=6
+fcb89c28-ac45-45ed-bc38-00fa022469e0  esx01.alan.lab           ASSIGNED               pool=m01-np01
+945ade89-b77b-4e25-9a2c-ecc53bf5f0c7  esx02.alan.lab           ASSIGNED               pool=m01-np01
+a92f07c4-9682-4917-8a4f-f8ec71eee76a  esx03.alan.lab           ASSIGNED               pool=m01-np01
+ed144322-f634-48af-896a-d9c6e4531003  esx05.alan.lab           ASSIGNED               pool=m01-np01
+521b2454-3448-44c5-84c4-b71a011f872e  esx06.alan.lab           ASSIGNED               pool=m01-np01
+058084e4-303a-4643-bfce-70a38e28a837  esx07.alan.lab           ASSIGNED               pool=m01-np01
+
+   Sub-Cluster Member Count: 7
+   Sub-Cluster Member HostNames: esx02.alan.lab, esx01.alan.lab, esx03.alan.lab, esx07.alan.lab, esx06.alan.lab, esx05.alan.lab, esx-witness.alan.lab
+   Fault Domain Id: c6e7f6a7-d098-652a-2f25-cb78365d0260
+   Fault Domain Name: vcf-m01-cl01_primary-az-faultdomain
+   Preferred Fault Domain Name: vcf-m01-cl01_primary-az-faultdomain
+   Total Number Of Resyncing Objects: 33
+   Total GB Left To Resync: 293.79
+Health Status                                              Number Of Objects
+---------------------------------------------------------  -----------------
+reducedavailabilitywithpolicypending                                      20
+reduced-availability-with-active-rebuild                                  19
+reducedavailabilitywithpausedrebuild                                       1
+healthy                                                                   41
+

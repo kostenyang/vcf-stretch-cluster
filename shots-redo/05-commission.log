@@ -1,0 +1,5 @@
+validation: COMPLETED SUCCEEDED
+POST hosts -> 202 Commissioning host(s) esx05.alan.lab,esx06.alan.lab,esx07.alan.lab to VMware Cloud Foundation
+[13:23:45] Queued 0/38 []
+[13:24:45] In Progress 25/38 ['FetchHostsAttributesAction']
+[13:25:45] Successful 35/37 []

@@ -1,0 +1,47 @@
+retry -> 200 {}
+[14:33:28] In Progress 59/115 []
+[14:34:28] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:35:28] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:36:29] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:37:29] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:38:29] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:39:29] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:40:29] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:41:29] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:42:29] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:43:29] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:44:29] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:45:29] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:46:29] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:47:29] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:48:29] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:49:29] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:50:29] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:51:29] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:52:30] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:53:30] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:54:30] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:55:30] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:56:30] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:57:30] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:58:30] In Progress 64/115 ['Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch']
+[14:59:30] Failed 68/115 []
+FAILED: Migrate ESX Host Management vmknic(s) to vSphere Distributed Switch
+[
+  {
+    "errorCode": "VSPHERE_CONFIGURE_HOST_DVS_FAILED",
+    "errorType": "ERROR",
+    "arguments": [
+      "esx05.alan.lab",
+      "192.168.120.65 -> dvportgroup-82"
+    ],
+    "message": "Failed to configure Vswitch to DVS vmknic migration on Host esx05.alan.lab for vmknic(s) 192.168.120.65 -> dvportgroup-82",
+    "causes": [
+      {
+        "type": "com.vmware.vim.binding.vmodl.fault.HostCommunication",
+        "message": "An error occurred while communicating with the remote host."
+      }
+    ],
+    "referenceToken": "MNRV5E"
+  }
+]

@@ -1,0 +1,10 @@
+adding standalone host esx-witness.alan.lab
+vSwitch0 MTU -> 9000
+portgroup vsan-witness VLAN 140 created
+vmk1 192.168.140.68/255.255.255.0 MTU 9000 created
+vmk1 tagged vsan
+
+DONE. 現在到 witness SSH 驗 jumbo(每台 cluster 主機的 vSAN IP,不是管理 IP):
+  esxcli vsan network list
+  for ip in 192.168.140.5 192.168.140.6 ...; do vmkping -I vmk1 -s 8972 -d -c 2 $ip; done
+全部通了再跑 vcf_stretch.py stretch。

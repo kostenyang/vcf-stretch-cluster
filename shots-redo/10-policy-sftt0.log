@@ -1,0 +1,26 @@
+目前: {'hostFailuresToTolerate': 1, 'stripeWidth': 1, 'proportionalCapacity': 0, 'forceProvisioning': False, 'cacheReservation': 0, 'subFailuresToTolerate': 1, 'replicaPreference': 'RAID-1 (Mirroring) - Performance', 'checksumDisabled': False, 'locality': 'None', 'iopsLimit': 0}
+改後: {'hostFailuresToTolerate': 1, 'stripeWidth': 1, 'proportionalCapacity': 0, 'forceProvisioning': False, 'cacheReservation': 0, 'subFailuresToTolerate': 0, 'replicaPreference': 'RAID-1 (Mirroring) - Performance', 'checksumDisabled': False, 'locality': 'None', 'iopsLimit': 0}
+  reapply nsx01                                         success 
+  reapply license                                       success 
+  reapply vcsa                                          success 
+  reapply vcfops                                        success 
+  reapply proxy                                         success 
+  reapply vsp01-82nps                                   success 
+  reapply vsp01-fjz7v                                   success 
+  reapply vsp01-mtx98                                   success 
+  reapply sddc                                          success 
+  reapply vcf-services-runtime-template-9.1.1.0.25714471 error The operation is not supported on the object.
+
+compliance:
+  nsx01                                         disks= 2 {'nonCompliant'}
+  license                                       disks= 3 {'nonCompliant', 'compliant'}
+  vcsa                                          disks=15 {'nonCompliant', 'compliant'}
+  vcfops                                        disks= 3 {'nonCompliant'}
+  proxy                                         disks= 4 {'nonCompliant'}
+  vsp01-82nps                                   disks=13 {'nonCompliant', 'compliant'}
+  vsp01-fjz7v                                   disks= 1 {'nonCompliant'}
+  vsp01-mtx98                                   disks=10 {'nonCompliant', 'compliant'}
+  sddc                                          disks= 6 {'nonCompliant'}
+  vcf-services-runtime-template-9.1.1.0.25714471 disks= 1 {'outOfDate'}
+
+接著在任一 cluster 主機:esxcli vsan debug resync summary get  → 歸零後再 retry SDDC Manager task
